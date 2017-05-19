@@ -196,10 +196,10 @@ require.register("config.js", function(exports, require, module) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-	value: true
+    value: true
 });
 var Config = exports.Config = {
-	API_URL: 'xxxxxxxxxx'
+    API_URL: 'xxxxxxxxxx'
 };
 
 });
@@ -291,7 +291,7 @@ require.register("layouts/MainLayout/MainLayout.js", function(exports, require, 
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -305,40 +305,40 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var MainLayout = function () {
-  function MainLayout(p) {
-    _classCallCheck(this, MainLayout);
+    function MainLayout(p) {
+        _classCallCheck(this, MainLayout);
 
-    console.log('MainLayout Constructor');
-    this.children = p.children;
-  }
+        console.log('MainLayout Constructor');
+        this.children = p.children;
+    }
 
-  _createClass(MainLayout, [{
-    key: 'logout',
-    value: function logout() {
-      // Hypothetical logout (simple example of variable)
-      alert('This is a called to class method');
-      console.log('logout');
-      _mithril2.default.route('/');
-    }
-  }, {
-    key: 'existUser',
-    value: function existUser() {
-      return localStorage.getItem('user') != 'false'; // Hypothetical control variable in the localstorage
-    }
-  }, {
-    key: 'view',
-    value: function view() {
-      console.log('MainLayout View');
-      return (0, _mithril2.default)('div', { class: "MainLayout" }, (0, _mithril2.default)('div', { class: "text-center " + (this.existUser.bind(this) ? "" : "hidden") }, [(0, _mithril2.default)('a', { onclick: this.logout.bind(this) }, [(0, _mithril2.default)('span', { class: 'pt-icon-standard pt-icon-cross' }), 'This is a simple link']), (0, _mithril2.default)('br'), this.children]));
-    }
-  }, {
-    key: 'oncreate',
-    value: function oncreate() {
-      console.log('A Layout (component) was created');
-    }
-  }]);
+    _createClass(MainLayout, [{
+        key: 'logout',
+        value: function logout() {
+            // Hypothetical logout (simple example of variable)
+            alert('This is a called to class method');
+            console.log('logout');
+            _mithril2.default.route('/');
+        }
+    }, {
+        key: 'existUser',
+        value: function existUser() {
+            return localStorage.getItem('user') != 'false'; // Hypothetical control variable in the localstorage
+        }
+    }, {
+        key: 'view',
+        value: function view() {
+            console.log('MainLayout View');
+            return (0, _mithril2.default)('div', { class: "MainLayout" }, (0, _mithril2.default)('div', { class: "text-center " + (this.existUser.bind(this) ? "" : "hidden") }, [(0, _mithril2.default)('a', { onclick: this.logout.bind(this) }, [(0, _mithril2.default)('span', { class: 'pt-icon-standard pt-icon-cross' }), 'This is a simple link']), (0, _mithril2.default)('br'), this.children]));
+        }
+    }, {
+        key: 'oncreate',
+        value: function oncreate() {
+            console.log('A Layout (component) was created');
+        }
+    }]);
 
-  return MainLayout;
+    return MainLayout;
 }();
 
 exports.default = MainLayout;
