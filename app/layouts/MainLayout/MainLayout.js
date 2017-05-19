@@ -11,7 +11,6 @@ export default class MainLayout {
     logout() {  // Hypothetical logout (simple example of variable)
         alert('This is a called to class method');
         console.log('logout');
-        m.route('/');
     }
 
     existUser() {
