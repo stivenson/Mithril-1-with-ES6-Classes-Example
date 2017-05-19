@@ -1,0 +1,1 @@
+All resources here, inside multiple subfolders
