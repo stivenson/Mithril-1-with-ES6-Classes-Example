@@ -1,5 +1,5 @@
 
 export const Config = {
-	API_URL: 'xxxxxxxxxx'
+    API_URL: 'xxxxxxxxxx'
 };
 
