@@ -4,7 +4,7 @@ Example of Mithril 1 with ES6 Classes
 ## Getting started
 
 * Install (if you don't have them):
-    * [Node.js](http://nodejs.org): `brew install node` on OS X (Version: 7.9.x)
+    * [Node.js](http://nodejs.org) (Version: 7.9.x): `brew install node` on OS X
     * [Brunch](http://brunch.io): `npm install -g brunch`
     * Brunch plugins and app dependencies: `npm install`
 * Run:
