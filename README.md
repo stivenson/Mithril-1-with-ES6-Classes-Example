@@ -1,10 +1,6 @@
 # Mithril-1-with-ES6-Classes-Example
 Example of Mithril 1 with ES6 Classes
 
-## Installation
-
-Clone this repo manually or use `brunch new dir -s brunch/with-es6`
-
 ## Getting started
 
 * Install (if you don't have them):
